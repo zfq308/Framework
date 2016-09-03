@@ -46,6 +46,7 @@
     <Compile Include="Interface\ISaveArgument.cs" />
     <Compile Include="Interface\IScheduler.cs" />
     <Compile Include="Interface\ISourceReader.cs" />
+    <Compile Include="Interface\IVerify.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
