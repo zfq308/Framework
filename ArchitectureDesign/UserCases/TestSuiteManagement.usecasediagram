@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="3f0d9951-1a33-43b2-8217-24739433aa8c" name="TestSuiteManagement" linkedPackageId="18de8eaf-97b1-43f9-9838-c1dd62b1dce2" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="3cde096e-a96f-409c-94c0-ee1450f255cd">
+      <profileInstance Id="4ecbf033-00c2-43cb-8e24-811275a46e13" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cc2dbef1-96bc-4a1e-852b-7d1b7b5e72a4">
+      <profileInstance Id="9e762b20-831a-41dc-8bbb-fe0ce10c2fb2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="18004d41-355a-4ba7-9593-82612ce5b964" name="QA Or DevQA" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="48b428a9-69b6-48a1-b7e5-58f0085f5f08" />
+        <targetEnds>
+          <association Id="f8418121-fe3e-4acc-a1d4-74ac10e71525" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fd88ae34-2cbe-4d76-8cab-23c1de86d9bb" LastKnownName="Create Test Suite" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2a90801f-1d31-49c8-8b15-e620806e1ed0" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e70d2860-58c8-4963-a5cf-bb8ad5fb51c7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="71e979df-9f6d-4efb-9dae-5afe45fe7e55" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e2be3fe2-cdd4-4cce-9f5b-fc74f08b242a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b227bdba-6d80-45cd-8503-d2da8615de90" />
+          </association>
+          <association Id="87feea4a-c38a-4c9e-9cf6-a3c3ea03118c" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="923f60f5-4d3c-4143-a7bf-c521df1b1c4e" LastKnownName="Create Test Case" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75a04cde-b1da-4496-8491-3f2e753e6796" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8edaf06e-7b20-4fda-87ce-a55078589161" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8633ac58-bac1-4d0a-9fd4-107f59ca90ab" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8a6d5e7a-2500-41ce-9192-ca029eccf654" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b9bc1147-9682-4491-b8f2-22a1f5e2fd8d" />
+          </association>
+          <association Id="6e8189bf-2624-4a5e-87aa-57036098a5df" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Update Test Suite" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c01c967d-87bf-4473-8147-ef5ee062f263" LastKnownName="Update Test Suite" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="74fc2be0-0c0d-4478-b804-23edd7aa62e0" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9f514632-e3aa-499f-8854-99395c63715b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae511f53-5a9b-4051-b3cc-9f1c9ecfc362" name="Update Test Suite" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b228782b-c326-4c2f-9e1a-c1e5e3e8eb97" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8965a313-4595-4783-b4be-2f7f5870ecd3" />
+          </association>
+          <association Id="6cf5e8e5-ff08-4d3d-aed4-3758f27fe13d" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Update Test case" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="74debfcf-c4c0-4730-a739-33933c8b8264" LastKnownName="Update Test case" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43e38f21-89c0-4f63-a61e-dd2e9f4c3d81" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8956227c-70e1-4594-8e5d-95b985a8cde0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cedc4194-73aa-490a-8388-8bebe56dae3e" name="Update Test case" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="398d10cb-b99e-49e5-b5aa-35ab8f537524" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4fd52420-da45-4643-93ca-03fbdce9fe8a" />
+          </association>
+          <association Id="a9a2fa27-d275-4b5d-a9b5-34eb86969566" isDerived="false" sourceEndRoleName="QA" targetEndRoleName="Delete Test case" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6f60d955-db6a-4a31-b615-d51221c272a0" LastKnownName="Delete Test case" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de149633-999d-4328-bfc2-89589c643614" name="QA" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d8fe4190-8d24-4d78-9055-25595fbdda8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f93ca0e-922a-4c79-8052-da3a6914df44" name="Delete Test case" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="03ffddf4-4a82-4bfc-bbdc-b793be78cf8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b7df1b88-9946-4a9a-9574-53463e783273" />
+          </association>
+          <association Id="58eba7fa-5ae6-4cc5-a9b3-42738071b916" isDerived="false" sourceEndRoleName="QA" targetEndRoleName="Delete Test Suite" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dfebae2a-5227-47d5-9810-39cb16579d76" LastKnownName="Delete Test Suite" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f1f3779-7170-4c9a-87aa-c01c2d504f5e" name="QA" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6de1dbf3-8c75-4e87-9127-60d2bf3cfdd0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="34153850-9891-4466-ae4b-2f15048df2f2" name="Delete Test Suite" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="548d6173-4db7-47e0-869c-b454198f8bb2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9a1e4919-474f-4155-9ab0-5a4d43af07dd" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fd88ae34-2cbe-4d76-8cab-23c1de86d9bb" name="Create Test Suite" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="74d37e1a-0162-4c02-8b7c-d2f532a6414e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="923f60f5-4d3c-4143-a7bf-c521df1b1c4e" name="Create Test Case" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7228b1f5-bbf4-4611-a580-13b833d2349f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c01c967d-87bf-4473-8147-ef5ee062f263" name="Update Test Suite" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="de25ebcf-02a7-4cbc-bab7-d0fdacf398d7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="74debfcf-c4c0-4730-a739-33933c8b8264" name="Update Test case" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0e1fed7b-91b4-4050-964a-8d7f75676a2c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6f60d955-db6a-4a31-b615-d51221c272a0" name="Delete Test case" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="deeff253-e227-472f-a99e-a859f933867e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dfebae2a-5227-47d5-9810-39cb16579d76" name="Delete Test Suite" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ff8fad7e-38d2-4704-9267-387a16c1d9a0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="18de8eaf-97b1-43f9-9838-c1dd62b1dce2" name="ArchitectureDesign">
+    <elementDefinition Id="beea95a2-27ad-4793-96a8-af400aa4f5a9" />
+  </package>
+</useCaseModelRoot>

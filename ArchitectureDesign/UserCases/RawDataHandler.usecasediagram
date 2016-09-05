@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="42b243d5-bd7f-41ea-b6a8-9e6ab846771c" name="RawDataHandler" linkedPackageId="7f452433-9167-49a8-8dd0-0291e0bec4c6" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="6eda0ab0-cdd4-4d0f-b6d2-be095432967f" name="RawDataHandlerProcess" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4bbc6cc2-cbc4-4a1a-b4c4-7c86687c67fe" />
+        <targetEnds>
+          <association Id="753bf849-38fd-435e-a82a-aae744b911a7" isDerived="false" sourceEndRoleName="RawDataHandlerProcess" targetEndRoleName="Read" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="862ffc76-4a75-4ae7-ad73-95c67086cb48" LastKnownName="HandlerRawData" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b52721e-8adf-406c-abfb-6bc59ec0ee9e" name="RawDataHandlerProcess" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1df2c193-9907-4232-9117-3a97670e62f3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ff44caf-3c57-48fe-afa5-44c91699b646" name="Read" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76c84e0d-0a24-48a2-a615-32105a049151" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ad7eb3e8-cfe4-4d37-908c-60dac43c7365" />
+          </association>
+          <association Id="629d220e-4fb9-4fd2-8ca9-0347bae8baeb" isDerived="false" sourceEndRoleName="RawDataHandlerProcess" targetEndRoleName="Read Cache" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0be6846c-19dd-4104-8b87-3b1c65202907" LastKnownName="Check Cache exist" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0c5b8c58-6b17-436e-8b2c-b1de4f94dcf3" name="RawDataHandlerProcess" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="519b4805-ba87-4e70-bd11-fdfddc298e2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b61f84e0-c1f1-419f-9561-0cb370e35fc9" name="Read Cache" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4dafed03-6e56-4f30-8467-0a0234156810" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d793b6b9-612b-45bc-afb7-0e8078088deb" />
+          </association>
+          <association Id="14fb8612-9aa9-40fe-a78e-751b9235e22c" isDerived="false" sourceEndRoleName="RawDataHandlerProcess" targetEndRoleName="UpdateTestCaseTable" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4c1701e5-78da-4dfb-88a0-eefcc9b792a5" LastKnownName="UpdateTestCaseTable" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="125b4ebc-defb-4135-8689-029bf39c74a7" name="RawDataHandlerProcess" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5353c31b-7a0c-47e0-97cc-9258fac8bc03" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="abd0bf37-ada3-4ddd-b3a3-0b8c6156b169" name="UpdateTestCaseTable" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="de8fa638-0549-46ee-8b98-613263939d18" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a5014c2a-02c0-4cea-8168-e71d43d43d66" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b66e754a-6118-40fb-a3a5-1e8a150def87" name="Do PreActions" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="824ac000-0e26-41f0-bc07-8b6c52d6ec0c" />
+        <subjects>
+          <subsystemMoniker Id="862ffc76-4a75-4ae7-ad73-95c67086cb48" LastKnownName="HandlerRawData" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c0eef2db-1ea1-4817-a1e1-e439d78cae47" name="Do PostActions" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a2191423-b7df-47e3-9395-caa10086b9f2" />
+        <suppliersInternal>
+          <dependency Id="b9878910-dbbe-4d14-a6a0-c009f882ec3f">
+            <useCaseMoniker Id="072719ed-2ed3-4d10-bd79-ded8993ca2f9" LastKnownName="ReadRawData" />
+            <elementDefinition Id="fd0ebabe-f8d9-4c7b-b8b8-5818d2a2838b" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="862ffc76-4a75-4ae7-ad73-95c67086cb48" LastKnownName="HandlerRawData" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="072719ed-2ed3-4d10-bd79-ded8993ca2f9" name="ReadRawData" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c1ba9b2e-45f1-41cd-b924-6e6822a559d7" />
+        <suppliersInternal>
+          <dependency Id="7f4bc629-605e-414b-84f8-8f3ebdffe1b4">
+            <useCaseMoniker Id="b66e754a-6118-40fb-a3a5-1e8a150def87" LastKnownName="Do PreActions" />
+            <elementDefinition Id="c4d848e3-a10e-45be-a66c-f9b742322569" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="862ffc76-4a75-4ae7-ad73-95c67086cb48" LastKnownName="HandlerRawData" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="862ffc76-4a75-4ae7-ad73-95c67086cb48" name="HandlerRawData" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7eb36483-be46-4fd9-918a-827737103699" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="aa340e39-a0cb-4363-b255-1481db1e0bfa" name="DoSaveRawDataActions" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1af790a3-f074-41c0-ab68-864625c6604c" />
+        <suppliersInternal>
+          <dependency Id="4d3b087d-4adb-4e35-b56c-2f240b39e7af">
+            <useCaseMoniker Id="c0eef2db-1ea1-4817-a1e1-e439d78cae47" LastKnownName="Do PostActions" />
+            <elementDefinition Id="7527a58f-045c-4746-b7bd-37b82399b756" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="862ffc76-4a75-4ae7-ad73-95c67086cb48" LastKnownName="HandlerRawData" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4c1701e5-78da-4dfb-88a0-eefcc9b792a5" name="UpdateTestCaseTable" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fc5f6b01-d9bb-4cbe-94e8-a854572543a3" />
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0be6846c-19dd-4104-8b87-3b1c65202907" name="Check Cache exist" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5fdaee28-779e-46cd-9602-3d4bb4052a90" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="b99cf5d3-acdd-43ab-a0bf-2b9ff10804b7" name="UpdateTestCaseTable" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="635a3c5b-94d7-4854-8db4-7c3aab1e1e0e" />
+        <suppliersInternal>
+          <dependency Id="3895bf8f-73d6-43ae-ad3b-c6cc966034e6">
+            <useCaseMoniker Id="aa340e39-a0cb-4363-b255-1481db1e0bfa" LastKnownName="DoSaveRawDataActions" />
+            <elementDefinition Id="75be909d-d37c-46b4-9a45-348a39e6283b" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="862ffc76-4a75-4ae7-ad73-95c67086cb48" LastKnownName="HandlerRawData" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="7f452433-9167-49a8-8dd0-0291e0bec4c6" name="ArchitectureDesign">
+    <elementDefinition Id="beea95a2-27ad-4793-96a8-af400aa4f5a9" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8e05d890-bfe0-4a55-ba30-2310ddfaecff">
+        <profileInstance Id="12b623a6-1544-42fd-99e5-96a272ef8349" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6be7a046-424b-4af2-a9e5-bfb937cff3ef">
+        <profileInstance Id="6ed65ad0-4165-4b6c-a7a1-d746f996be9d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

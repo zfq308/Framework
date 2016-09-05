@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TestSuiteManagement">
+  <useCaseModelRootMoniker Id="3f0d9951-1a33-43b2-8217-24739433aa8c" />
+  <nestedChildShapes>
+    <actorShape Id="c124628e-f9f7-4af3-b589-02480a110486" absoluteBounds="5.125, 2.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="18004d41-355a-4ba7-9593-82612ce5b964" LastKnownName="QA Or DevQA" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="1d093cd1-0a9f-4b8e-a4ee-70e55c6d200e" absoluteBounds="6.75, 1, 1.5, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="fd88ae34-2cbe-4d76-8cab-23c1de86d9bb" LastKnownName="Create Test Suite" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(5.625 : 2.68382352941176); (7.20031093461455 : 1.47917399117711)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="f8418121-fe3e-4acc-a1d4-74ac10e71525" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c124628e-f9f7-4af3-b589-02480a110486" />
+        <useCaseShapeMoniker Id="1d093cd1-0a9f-4b8e-a4ee-70e55c6d200e" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="de3575aa-e204-4518-b92f-7c684e1126ae" absoluteBounds="2.625, 1, 1.5, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="923f60f5-4d3c-4143-a7bf-c521df1b1c4e" LastKnownName="Create Test Case" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(5.125 : 2.671875); (3.65966726719223 : 1.48129215459369)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="87feea4a-c38a-4c9e-9cf6-a3c3ea03118c" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c124628e-f9f7-4af3-b589-02480a110486" />
+        <useCaseShapeMoniker Id="de3575aa-e204-4518-b92f-7c684e1126ae" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="6b7bc217-2bcd-466e-a3c0-9c83991e3ee5" absoluteBounds="6.875, 3.75, 1.5, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="c01c967d-87bf-4473-8147-ef5ee062f263" LastKnownName="Update Test Suite" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(5.625 : 3); (7.20897485283108 : 3.79198742641554)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="6e8189bf-2624-4a5e-87aa-57036098a5df" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c124628e-f9f7-4af3-b589-02480a110486" />
+        <useCaseShapeMoniker Id="6b7bc217-2bcd-466e-a3c0-9c83991e3ee5" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="00457223-db9e-45c9-a414-53800e7a027f" absoluteBounds="2.625, 3.875, 1.5, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="74debfcf-c4c0-4730-a739-33933c8b8264" LastKnownName="Update Test case" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(5.125 : 3.03125); (3.72794117647059 : 3.90441176470588)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="6cf5e8e5-ff08-4d3d-aed4-3758f27fe13d" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c124628e-f9f7-4af3-b589-02480a110486" />
+        <useCaseShapeMoniker Id="00457223-db9e-45c9-a414-53800e7a027f" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="ddd6d9bf-2c7b-4c98-9ec0-544c7fd08e5c" absoluteBounds="2.5, 2.5, 1.625, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="6f60d955-db6a-4a31-b615-d51221c272a0" LastKnownName="Delete Test case" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(5.125 : 2.85984848484848); (4.10968297185008 : 2.79831411950607)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="a9a2fa27-d275-4b5d-a9b5-34eb86969566" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c124628e-f9f7-4af3-b589-02480a110486" />
+        <useCaseShapeMoniker Id="ddd6d9bf-2c7b-4c98-9ec0-544c7fd08e5c" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="e11fa74c-bf09-41ef-8d0f-82655b32ac74" absoluteBounds="6.75, 2.5, 1.5, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="dfebae2a-5227-47d5-9810-39cb16579d76" LastKnownName="Delete Test Suite" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(5.625 : 2.86029411764706); (6.76141233088655 : 2.79344633347726)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="58eba7fa-5ae6-4cc5-a9b3-42738071b916" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c124628e-f9f7-4af3-b589-02480a110486" />
+        <useCaseShapeMoniker Id="e11fa74c-bf09-41ef-8d0f-82655b32ac74" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>
