@@ -40,13 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implements\Keys\KeysGeneratorBasedSQLServer.cs" />
     <Compile Include="Implements\Reader\XOIReader.cs" />
     <Compile Include="Interface\IDoAction.cs" />
+    <Compile Include="Interface\IKeysGenerator.cs" />
     <Compile Include="Interface\IReaderArgument.cs" />
     <Compile Include="Interface\ISaveArgument.cs" />
     <Compile Include="Interface\IScheduler.cs" />
     <Compile Include="Interface\ISourceReader.cs" />
     <Compile Include="Interface\IVerify.cs" />
+    <Compile Include="KeyItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
