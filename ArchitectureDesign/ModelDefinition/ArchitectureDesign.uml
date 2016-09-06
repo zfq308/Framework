@@ -3,6 +3,58 @@
   dslVersion="1.0.0.0"
   Id="beea95a2-27ad-4793-96a8-af400aa4f5a9"
   name="ArchitectureDesign" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="aba8d446-e08e-4931-9e18-138a0ccbdfe0">
+      <body>Save to local Sqlite or Flat file.</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="1af790a3-f074-41c0-ab68-864625c6604c"
+          LastKnownName="DoSaveRawDataActions"
+          LastKnownLocation="ArchitectureDesign.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="8bc7e27c-2d61-486c-86da-542651400881">
+      <body>Don't upload file in this phase.</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="e5bf5c26-b18f-4203-8eeb-160a4a1dd154"
+          LastKnownName="Batch Upload  Local data to database"
+          LastKnownLocation="ArchitectureDesign.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="b7b78257-2c9d-4943-8bef-a17ebd52ab35">
+      <body>From Python File</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="b89f222c-261d-4a52-b2ba-a20334596213"
+          LastKnownName="LoadVerifyRules"
+          LastKnownLocation="ArchitectureDesign.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="dcb2dd83-2f17-41b5-86fd-e9fa460f45e1">
+      <body>From C# dll</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="b89f222c-261d-4a52-b2ba-a20334596213"
+          LastKnownName="LoadVerifyRules"
+          LastKnownLocation="ArchitectureDesign.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="2782ece4-a069-42e2-b4ec-69ecce453e2a">
+      <body>Basic builtin Rules</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="b89f222c-261d-4a52-b2ba-a20334596213"
+          LastKnownName="LoadVerifyRules"
+          LastKnownLocation="ArchitectureDesign.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -329,7 +381,7 @@
     <packageHasNamedElement>
       <actor
         Id="4bbc6cc2-cbc4-4a1a-b4c4-7c86687c67fe"
-        name="RawDataHandlerProcess"
+        name="RawDataHandler Process"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
@@ -580,6 +632,496 @@
             LastKnownLocation="ArchitectureDesign.uml" />
         </subjects>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="3e6d83be-148f-4edf-bd39-574485035a33"
+        name="RawDataResult BatchUpload Process"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="241fba0a-fc0f-4ebc-aaff-6f71f043a216"
+            isDerived="false"
+            sourceEndRoleName="RawDataResult BatchUpload Process"
+            targetEndRoleName="ReadTempResultFile(Sqlite or Flatfile)"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="beacccc7-93ac-4d41-bd85-616a25c2a1ff"
+              LastKnownName="ReadTempResultFile(Sqlite or Flatfile)"
+              LastKnownLocation="ArchitectureDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6d208606-1513-4e6c-8837-bcda7a165404"
+                  name="RawDataResult BatchUpload Process"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1879275e-0ad6-414a-a10a-6be61e73544b"
+                  name="ReadTempResultFile(Sqlite or Flatfile)"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="46270447-f89e-469f-a787-b716f823e34a"
+            isDerived="false"
+            sourceEndRoleName="RawDataResult BatchUpload Process"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e5bf5c26-b18f-4203-8eeb-160a4a1dd154"
+              LastKnownName="Batch Upload  Local data to database"
+              LastKnownLocation="ArchitectureDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c4281ce1-cebd-4712-84fc-312915930b5a"
+                  name="RawDataResult BatchUpload Process"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="658c9e04-d864-4e0f-a409-98c6d0ca1c21"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="beacccc7-93ac-4d41-bd85-616a25c2a1ff"
+        name="ReadTempResultFile(Sqlite or Flatfile)"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e5bf5c26-b18f-4203-8eeb-160a4a1dd154"
+        name="Batch Upload  Local data to database"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e9a18212-3018-4ff9-a9ee-9ca0e430cb53"
+        name="TaskAssignment Process"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="866ed220-9a83-4dd0-8ac6-1bcfbb0310a2"
+            isDerived="false"
+            sourceEndRoleName="TaskAssignment Process"
+            targetEndRoleName="Get Matching  repair key for verification."
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a84114e9-7d71-46f4-8a50-6d3625faab5d"
+              LastKnownName="Get Matching  repair key for verification from DB."
+              LastKnownLocation="ArchitectureDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99e1011b-ec2a-4d5a-bd44-9d031564986f"
+                  name="TaskAssignment Process"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="66ca8241-a358-4aa6-ba86-7af83194ae52"
+                  name="Get Matching  repair key for verification."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5f04ce0e-8a93-44b6-8fa7-2bc6662988d7"
+            isDerived="false"
+            sourceEndRoleName="TaskAssignment Process"
+            targetEndRoleName="Generate task running record in database."
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2809e5bf-4125-44d4-bc06-5027783ed8c1"
+              LastKnownName="Generate task running record in database."
+              LastKnownLocation="ArchitectureDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95f0255e-92bb-40ba-994b-7635343d87c6"
+                  name="TaskAssignment Process"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cbcf1271-cfdb-4bd5-b108-16e71bad015c"
+                  name="Generate task running record in database."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fb9b2e92-861e-40fe-a8cf-b9adb8b0515c"
+            isDerived="false"
+            sourceEndRoleName="TaskAssignment Process"
+            targetEndRoleName="Export UnMatch Testcase report"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="346b8611-2f0e-4b6b-b86a-6147d74eb487"
+              LastKnownName="Export UnMatch Testcase report"
+              LastKnownLocation="ArchitectureDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="79444b77-5d44-467a-82b4-968c91fad631"
+                  name="TaskAssignment Process"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1b480fc-0cf8-4ec1-9064-cb07f2fd6153"
+                  name="Export UnMatch Testcase report"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1b865e35-ad48-4aad-8c0c-6969ce7a8889"
+            isDerived="false"
+            sourceEndRoleName="TaskAssignment Process"
+            targetEndRoleName="Assign Task to specific Running Machine"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="08628efa-6860-43cf-9215-bc7994a1ed59"
+              LastKnownName="Assign/re-Assign task to specific running machine"
+              LastKnownLocation="ArchitectureDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca2a605a-83e8-4383-9dc4-13973c43499d"
+                  name="TaskAssignment Process"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b9bed5a-098d-40ba-a5aa-7493edde485a"
+                  name="Assign Task to specific Running Machine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a9bbcda6-1da3-4f5e-82e2-643c5c90605f"
+            isDerived="false"
+            sourceEndRoleName="TaskAssignment Process"
+            targetEndRoleName="Set execution priority"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="01b3ee1c-782f-42e3-b50d-e0ad0e8f84e5"
+              LastKnownName="Set execution priority"
+              LastKnownLocation="ArchitectureDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5390c921-36a3-49c2-bb78-1fc5e3b06d6f"
+                  name="TaskAssignment Process"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f1f1027-5566-4c45-a5b3-cd984c104ac3"
+                  name="Set execution priority"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="25b2cc92-f190-4ff5-a502-afd4ffed4420"
+            isDerived="false"
+            sourceEndRoleName="TaskAssignment Process"
+            targetEndRoleName="Update Task status(DB)"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0351ce7d-720d-46a0-9601-47c2703f8443"
+              LastKnownName="Update Task status(eg, Clean Flag to  rerun the task)"
+              LastKnownLocation="ArchitectureDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b5337fc7-6af9-4abd-8c06-88442c03ec64"
+                  name="TaskAssignment Process"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b7cb80e9-7dd0-4a35-93bb-6dc1d907491f"
+                  name="Update Task status(DB)"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2809e5bf-4125-44d4-bc06-5027783ed8c1"
+        name="Generate task running record in database."
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a84114e9-7d71-46f4-8a50-6d3625faab5d"
+        name="Get Matching  repair key for verification from DB."
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="346b8611-2f0e-4b6b-b86a-6147d74eb487"
+        name="Export UnMatch Testcase report"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="08628efa-6860-43cf-9215-bc7994a1ed59"
+        name="Assign/re-Assign task to specific running machine"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="01b3ee1c-782f-42e3-b50d-e0ad0e8f84e5"
+        name="Set execution priority"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0351ce7d-720d-46a0-9601-47c2703f8443"
+        name="Update Task status(eg, Clean Flag to  rerun the task)"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="14877cb5-cf08-4932-bb3e-615eac77a473"
+        name="TaskVerifyProcess"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="632210b3-0fc1-4727-a9d4-0db8b9ea0d38"
+            isDerived="false"
+            sourceEndRoleName="TaskVerifyProcess"
+            targetEndRoleName="Read Task From DB"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0cbe3a8b-de3a-403f-b04f-6532b779f881"
+              LastKnownName="Read Task From DB"
+              LastKnownLocation="ArchitectureDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eb7f4631-7df4-4b73-9afc-6794b1129850"
+                  name="TaskVerifyProcess"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b599b2c9-dc0e-4f4b-995c-712936d5d6f1"
+                  name="Read Task From DB"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4b3f332e-be72-40d9-86e2-880653df0b9a"
+            isDerived="false"
+            sourceEndRoleName="TaskVerifyProcess"
+            targetEndRoleName="Load"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b89f222c-261d-4a52-b2ba-a20334596213"
+              LastKnownName="LoadVerifyRules"
+              LastKnownLocation="ArchitectureDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4c2a4a8f-64eb-463d-8927-7013cb6d9d30"
+                  name="TaskVerifyProcess"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="803cb832-d700-487b-8db9-9e45b7b0696a"
+                  name="Load"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0cbe3a8b-de3a-403f-b04f-6532b779f881"
+        name="Read Task From DB"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b89f222c-261d-4a52-b2ba-a20334596213"
+        name="LoadVerifyRules"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="90ce2256-8b41-4baa-a507-0b25c9daa83c" name="TaskAssignmentProcess" linkedPackageId="bcd54ae6-0390-479b-b90a-ce3ea1609772" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="68d7db70-21df-44fb-a8eb-f66617c7727b">
+      <profileInstance Id="7f0eb1ec-312b-440a-b9a1-0946e4c78ef1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="14da3526-8067-4477-a1e7-eb72803c6f35">
+      <profileInstance Id="52020981-a9e1-4981-b193-524f39733b0a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="fa3dbcad-425c-43a5-a796-9023571a1003" name="TaskAssignment Process" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e9a18212-3018-4ff9-a9ee-9ca0e430cb53" />
+        <targetEnds>
+          <association Id="bb5c6e4a-4409-470d-89b5-31d89a616bc4" isDerived="false" sourceEndRoleName="TaskAssignment Process" targetEndRoleName="Get Matching  repair key for verification." isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0076ddca-09cc-4f41-810c-f8e6b24681b6" LastKnownName="Get Matching  repair key for verification from DB." />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e0f6857-a33b-4450-bf23-1a7d36f5d06a" name="TaskAssignment Process" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="99e1011b-ec2a-4d5a-bd44-9d031564986f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="635abae3-2db9-4cb6-989b-bbd3ab806465" name="Get Matching  repair key for verification." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="66ca8241-a358-4aa6-ba86-7af83194ae52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="866ed220-9a83-4dd0-8ac6-1bcfbb0310a2" />
+          </association>
+          <association Id="4f9e8747-b621-4b83-a547-914d539babc1" isDerived="false" sourceEndRoleName="TaskAssignment Process" targetEndRoleName="Generate task running record in database." isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="08cce95c-0908-47ed-a53c-22a9139af855" LastKnownName="Generate task running record in database." />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d171a02-6106-4be2-ac33-445db9e8b6a6" name="TaskAssignment Process" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="95f0255e-92bb-40ba-994b-7635343d87c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1683bb43-284a-4e45-a6b0-0d9bea6eaa5a" name="Generate task running record in database." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cbcf1271-cfdb-4bd5-b108-16e71bad015c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5f04ce0e-8a93-44b6-8fa7-2bc6662988d7" />
+          </association>
+          <association Id="956687d4-6472-4786-84d8-16c2aad281a0" isDerived="false" sourceEndRoleName="TaskAssignment Process" targetEndRoleName="Export UnMatch Testcase report" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="925e38fe-84f4-41ee-9da6-ff9b2d947c93" LastKnownName="Export UnMatch Testcase report" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ccd5384e-e645-4f05-a678-2790655e0a20" name="TaskAssignment Process" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="79444b77-5d44-467a-82b4-968c91fad631" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4e14a6f6-5b09-46b6-8d9a-75aa1565ce07" name="Export UnMatch Testcase report" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a1b480fc-0cf8-4ec1-9064-cb07f2fd6153" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fb9b2e92-861e-40fe-a8cf-b9adb8b0515c" />
+          </association>
+          <association Id="7dca403b-3b9e-460c-a07e-e8655530d464" isDerived="false" sourceEndRoleName="TaskAssignment Process" targetEndRoleName="Assign Task to specific Running Machine" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0bbc01c5-7922-416c-81f1-e8b07021aa40" LastKnownName="Assign/re-Assign task to specific running machine" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c6aeeb95-9418-4566-8036-fb34e549e0ea" name="TaskAssignment Process" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ca2a605a-83e8-4383-9dc4-13973c43499d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eeb40e4d-7e2d-4f1f-8660-b71e836b77c7" name="Assign Task to specific Running Machine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4b9bed5a-098d-40ba-a5aa-7493edde485a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1b865e35-ad48-4aad-8c0c-6969ce7a8889" />
+          </association>
+          <association Id="35f133e0-c1ba-41cb-b2da-adff59662fee" isDerived="false" sourceEndRoleName="TaskAssignment Process" targetEndRoleName="Set execution priority" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="32262bdc-eeec-4b7a-afbc-c4f508932ad8" LastKnownName="Set execution priority" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a652bce1-5476-4478-9fdd-d6cf9335e3de" name="TaskAssignment Process" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5390c921-36a3-49c2-bb78-1fc5e3b06d6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36f86fe4-2cad-488c-94d0-d8d1cb8b53da" name="Set execution priority" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5f1f1027-5566-4c45-a5b3-cd984c104ac3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a9bbcda6-1da3-4f5e-82e2-643c5c90605f" />
+          </association>
+          <association Id="59b8e0fe-bda9-45b5-b6d4-8760f225dfb7" isDerived="false" sourceEndRoleName="TaskAssignment Process" targetEndRoleName="Update Task status(DB)" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2c613eaf-0182-41dd-8991-09dadc7cc790" LastKnownName="Update Task status(eg, Clean Flag to  rerun the task)" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa1f9d06-9363-44ae-9737-b51f15b7435a" name="TaskAssignment Process" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b5337fc7-6af9-4abd-8c06-88442c03ec64" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1e2a7e93-e243-4e42-89a7-e8327ed7b9ae" name="Update Task status(DB)" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b7cb80e9-7dd0-4a35-93bb-6dc1d907491f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="25b2cc92-f190-4ff5-a502-afd4ffed4420" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="08cce95c-0908-47ed-a53c-22a9139af855" name="Generate task running record in database." isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2809e5bf-4125-44d4-bc06-5027783ed8c1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0076ddca-09cc-4f41-810c-f8e6b24681b6" name="Get Matching  repair key for verification from DB." isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a84114e9-7d71-46f4-8a50-6d3625faab5d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="925e38fe-84f4-41ee-9da6-ff9b2d947c93" name="Export UnMatch Testcase report" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="346b8611-2f0e-4b6b-b86a-6147d74eb487" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0bbc01c5-7922-416c-81f1-e8b07021aa40" name="Assign/re-Assign task to specific running machine" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="08628efa-6860-43cf-9215-bc7994a1ed59" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="32262bdc-eeec-4b7a-afbc-c4f508932ad8" name="Set execution priority" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="01b3ee1c-782f-42e3-b50d-e0ad0e8f84e5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2c613eaf-0182-41dd-8991-09dadc7cc790" name="Update Task status(eg, Clean Flag to  rerun the task)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0351ce7d-720d-46a0-9601-47c2703f8443" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="bcd54ae6-0390-479b-b90a-ce3ea1609772" name="ArchitectureDesign">
+    <elementDefinition Id="beea95a2-27ad-4793-96a8-af400aa4f5a9" />
+  </package>
+</useCaseModelRoot>

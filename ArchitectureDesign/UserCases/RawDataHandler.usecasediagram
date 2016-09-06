@@ -1,8 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="42b243d5-bd7f-41ea-b6a8-9e6ab846771c" name="RawDataHandler" linkedPackageId="7f452433-9167-49a8-8dd0-0291e0bec4c6" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="35edbf71-3c16-4d54-91a6-4e2a4b9c2fe6">
+      <elementDefinition Id="aba8d446-e08e-4931-9e18-138a0ccbdfe0" />
+      <body>Save to local Sqlite or Flat file.</body>
+      <annotatedElements>
+        <useCaseMoniker Id="aa340e39-a0cb-4363-b255-1481db1e0bfa" LastKnownName="DoSaveRawDataActions" />
+      </annotatedElements>
+    </comment>
+    <comment Id="7eb31682-07fd-48f9-85ba-f72378f1cc7c">
+      <elementDefinition Id="8bc7e27c-2d61-486c-86da-542651400881" />
+      <body>Don't upload file in this phase.</body>
+      <annotatedElements>
+        <useCaseMoniker Id="7f5936ae-1015-494e-9c2e-1f803935c9f9" LastKnownName="Batch Upload  Local data to database" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <useCaseModelRootHasTypes>
-      <actor Id="6eda0ab0-cdd4-4d0f-b6d2-be095432967f" name="RawDataHandlerProcess" isAbstract="false" isLeaf="false">
+      <actor Id="6eda0ab0-cdd4-4d0f-b6d2-be095432967f" name="RawDataHandler Process" isAbstract="false" isLeaf="false">
         <elementDefinition Id="4bbc6cc2-cbc4-4a1a-b4c4-7c86687c67fe" />
         <targetEnds>
           <association Id="753bf849-38fd-435e-a82a-aae744b911a7" isDerived="false" sourceEndRoleName="RawDataHandlerProcess" targetEndRoleName="Read" isLeaf="false" isAbstract="false">
@@ -135,6 +151,55 @@
         </subjects>
       </useCase>
     </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="fc361c3f-4a19-46df-9342-c58ce3107005" name="RawDataResult BatchUpload Process" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e6d83be-148f-4edf-bd39-574485035a33" />
+        <targetEnds>
+          <association Id="b8fa5c0b-9547-41c0-af53-80d21ba03bbf" isDerived="false" sourceEndRoleName="RawDataResult BatchUpload Process" targetEndRoleName="ReadTempResultFile(Sqlite or Flatfile)" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7fea978a-d01f-472f-9b04-0a177dfcad2c" LastKnownName="ReadTempResultFile(Sqlite or Flatfile)" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9142fd35-4bbd-41ad-bdd0-046abd3872b9" name="RawDataResult BatchUpload Process" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6d208606-1513-4e6c-8837-bcda7a165404" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ff7a194-761a-4b48-b6f3-1ceaab8fe4ed" name="ReadTempResultFile(Sqlite or Flatfile)" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1879275e-0ad6-414a-a10a-6be61e73544b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="241fba0a-fc0f-4ebc-aaff-6f71f043a216" />
+          </association>
+          <association Id="5d1b79e3-c45c-4ea2-ab81-c90f9fc7f35b" isDerived="false" sourceEndRoleName="RawDataResult BatchUpload Process" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7f5936ae-1015-494e-9c2e-1f803935c9f9" LastKnownName="Batch Upload  Local data to database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d25cd04e-504a-44c2-b73b-60c91b8e7dda" name="RawDataResult BatchUpload Process" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c4281ce1-cebd-4712-84fc-312915930b5a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bce8bc8a-6b74-4097-8581-0789b2c52ed5" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="658c9e04-d864-4e0f-a409-98c6d0ca1c21" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="46270447-f89e-469f-a787-b716f823e34a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7fea978a-d01f-472f-9b04-0a177dfcad2c" name="ReadTempResultFile(Sqlite or Flatfile)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="beacccc7-93ac-4d41-bd85-616a25c2a1ff" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7f5936ae-1015-494e-9c2e-1f803935c9f9" name="Batch Upload  Local data to database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5bf5c26-b18f-4203-8eeb-160a4a1dd154" />
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="7f452433-9167-49a8-8dd0-0291e0bec4c6" name="ArchitectureDesign">
     <elementDefinition Id="beea95a2-27ad-4793-96a8-af400aa4f5a9" />

@@ -8,8 +8,8 @@ namespace Executor.Interface
 {
     public interface IKeysGenerator
     {
-        bool AddKeysIntoRepository(List<KeyItem> keyItems);
+        bool AddKeysIntoRepository(List<TestCase> keyItems);
 
-        List<KeyItem> GetKeysCollectionsByKey(Guid Key);
+        List<TestCase> GetKeysCollectionsByKey(Guid Key);
     }
 }

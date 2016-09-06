@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="ad201828-02e6-4370-adc3-fb446a8649f9" name="TaskVerifyProcess" linkedPackageId="1b4344cf-4cde-4a80-a0be-e6c539c1543d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="e3851800-bd21-4325-ba39-a5ee131442e4">
+      <elementDefinition Id="b7b78257-2c9d-4943-8bef-a17ebd52ab35" />
+      <body>From Python File</body>
+      <annotatedElements>
+        <useCaseMoniker Id="bb4f6d0f-300d-4a78-bb11-581f8b759bd4" LastKnownName="LoadVerifyRules" />
+      </annotatedElements>
+    </comment>
+    <comment Id="abd5fe17-0dd3-40c1-9db6-9aadbc9db3eb">
+      <elementDefinition Id="dcb2dd83-2f17-41b5-86fd-e9fa460f45e1" />
+      <body>From C# dll</body>
+      <annotatedElements>
+        <useCaseMoniker Id="bb4f6d0f-300d-4a78-bb11-581f8b759bd4" LastKnownName="LoadVerifyRules" />
+      </annotatedElements>
+    </comment>
+    <comment Id="a8ac1f7b-43ce-4c11-b61b-04f81202f0df">
+      <elementDefinition Id="2782ece4-a069-42e2-b4ec-69ecce453e2a" />
+      <body>Basic builtin Rules</body>
+      <annotatedElements>
+        <useCaseMoniker Id="bb4f6d0f-300d-4a78-bb11-581f8b759bd4" LastKnownName="LoadVerifyRules" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="ad2005b0-f536-428f-805e-b9e6141e467e">
+      <profileInstance Id="a04effb3-5c84-446c-8349-b963a7688925" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="219f24c4-ad5b-499f-b851-ca2bd55f34a4">
+      <profileInstance Id="d9cb2e34-531e-404d-be15-e8e007199bb8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="5b35e366-77ac-4d7e-9585-c564697466f1" name="TaskVerifyProcess" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14877cb5-cf08-4932-bb3e-615eac77a473" />
+        <targetEnds>
+          <association Id="39fe242c-0764-4ebf-bf00-68651f7d5b60" isDerived="false" sourceEndRoleName="TaskVerifyProcess" targetEndRoleName="Read Task From DB" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="738906e5-eaa4-472f-ac5f-bd072a8118f0" LastKnownName="Read Task From DB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62b6cad7-04ed-4c64-866e-fe45763aa537" name="TaskVerifyProcess" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="eb7f4631-7df4-4b73-9afc-6794b1129850" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3517239e-5025-4168-879d-40f04f669cce" name="Read Task From DB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b599b2c9-dc0e-4f4b-995c-712936d5d6f1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="632210b3-0fc1-4727-a9d4-0db8b9ea0d38" />
+          </association>
+          <association Id="4d82490b-4770-4d4f-91b1-ce4f8197e62e" isDerived="false" sourceEndRoleName="TaskVerifyProcess" targetEndRoleName="Load" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bb4f6d0f-300d-4a78-bb11-581f8b759bd4" LastKnownName="LoadVerifyRules" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7fac3e5e-662d-44b2-b2ab-78a440148f5a" name="TaskVerifyProcess" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4c2a4a8f-64eb-463d-8927-7013cb6d9d30" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f0c7df4f-cb0b-4f69-96bc-dc7e97d732df" name="Load" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="803cb832-d700-487b-8db9-9e45b7b0696a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4b3f332e-be72-40d9-86e2-880653df0b9a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="738906e5-eaa4-472f-ac5f-bd072a8118f0" name="Read Task From DB" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0cbe3a8b-de3a-403f-b04f-6532b779f881" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bb4f6d0f-300d-4a78-bb11-581f8b759bd4" name="LoadVerifyRules" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b89f222c-261d-4a52-b2ba-a20334596213" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="1b4344cf-4cde-4a80-a0be-e6c539c1543d" name="ArchitectureDesign">
+    <elementDefinition Id="beea95a2-27ad-4793-96a8-af400aa4f5a9" />
+  </package>
+</useCaseModelRoot>

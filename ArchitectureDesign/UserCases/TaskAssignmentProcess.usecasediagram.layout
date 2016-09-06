@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TaskAssignmentProcess">
+  <useCaseModelRootMoniker Id="90ce2256-8b41-4baa-a507-0b25c9daa83c" />
+  <nestedChildShapes>
+    <actorShape Id="58e63218-d0bb-44bf-a7a5-a00e78766f84" absoluteBounds="3.875, 3, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="fa3dbcad-425c-43a5-a796-9023571a1003" LastKnownName="TaskAssignment Process" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="da5a43e5-1a74-484d-9d22-38bd5534a5fa" absoluteBounds="6.5, 3.875, 2.375, 0.875" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="08cce95c-0908-47ed-a53c-22a9139af855" LastKnownName="Generate task running record in database." />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4.375 : 3.32456140350877); (6.76452171603486 : 4.03722577495777)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="4f9e8747-b621-4b83-a547-914d539babc1" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="58e63218-d0bb-44bf-a7a5-a00e78766f84" />
+        <useCaseShapeMoniker Id="da5a43e5-1a74-484d-9d22-38bd5534a5fa" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="0fcfe8ed-610d-4d4f-9a34-d41a6b6a80d7" absoluteBounds="6.625, 1.375, 2, 0.875" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="0076ddca-09cc-4f41-810c-f8e6b24681b6" LastKnownName="Get Matching  repair key for verification from DB." />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4.375 : 3.14732142857143); (6.89592696712173 : 2.11194070993214)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="bb5c6e4a-4409-470d-89b5-31d89a616bc4" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="58e63218-d0bb-44bf-a7a5-a00e78766f84" />
+        <useCaseShapeMoniker Id="0fcfe8ed-610d-4d4f-9a34-d41a6b6a80d7" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="34fae22e-5ba1-45fc-85cf-2412341dcc59" absoluteBounds="1.25, 2.375, 1.625, 0.875" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="925e38fe-84f4-41ee-9da6-ff9b2d947c93" LastKnownName="Export UnMatch Testcase report" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.875 : 3.1969696969697); (2.81845681916389 : 2.97285447679234)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="956687d4-6472-4786-84d8-16c2aad281a0" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="58e63218-d0bb-44bf-a7a5-a00e78766f84" />
+        <useCaseShapeMoniker Id="34fae22e-5ba1-45fc-85cf-2412341dcc59" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="44f6a5ba-05b5-45d8-9930-f744ad543cf1" absoluteBounds="1.375, 4.875, 1.875, 0.875" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="0bbc01c5-7922-416c-81f1-e8b07021aa40" LastKnownName="Assign/re-Assign task to specific running machine" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.90530303030303 : 3.5); (2.66821870653648 : 4.90771664428608)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="7dca403b-3b9e-460c-a07e-e8655530d464" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="58e63218-d0bb-44bf-a7a5-a00e78766f84" />
+        <useCaseShapeMoniker Id="44f6a5ba-05b5-45d8-9930-f744ad543cf1" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="1b33889c-db25-4d6d-abd9-80789765ce1c" absoluteBounds="4.25, 5.375, 1.625, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="32262bdc-eeec-4b7a-afbc-c4f508932ad8" LastKnownName="Set execution priority" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4.21875 : 3.5); (4.92393508511408 : 5.38049356030421)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="35f133e0-c1ba-41cb-b2da-adff59662fee" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="58e63218-d0bb-44bf-a7a5-a00e78766f84" />
+        <useCaseShapeMoniker Id="1b33889c-db25-4d6d-abd9-80789765ce1c" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="ca6e0e22-f0c3-425c-b33b-2e65bf9fa95d" absoluteBounds="3.25, 1.125, 1.75, 1" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="2c613eaf-0182-41dd-8991-09dadc7cc790" LastKnownName="Update Task status(eg, Clean Flag to  rerun the task)" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4.125 : 3); (4.125 : 2.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="59b8e0fe-bda9-45b5-b6d4-8760f225dfb7" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="58e63218-d0bb-44bf-a7a5-a00e78766f84" />
+        <useCaseShapeMoniker Id="ca6e0e22-f0c3-425c-b33b-2e65bf9fa95d" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

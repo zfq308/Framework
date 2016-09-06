@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
@@ -17,14 +17,41 @@ namespace Executor
 
     public class TestCase
     {
+        /// <summary>
+        /// Test caseç¼–å·
+        /// </summary>
         public Guid TestCaseId { get; set; }
+        /// <summary>
+        /// Test caseæ‰€å±çš„TestSuiteç¼–å·
+        /// </summary>
         public Guid BelongTestSuiteId { get; set; }
+        /// <summary>
+        /// TCçš„åç§°
+        /// </summary>
         public string TestCaseName { get; set; }
+        /// <summary>
+        /// TestCase ç¦ç”¨æ ‡å¿—
+        /// </summary>
         public bool DisableTheCase { get; set; }
+        /// <summary>
+        /// TCçš„æè¿°
+        /// </summary>
         public string TestCaseDescription { get; set; }
+        /// <summary>
+        /// TC çš„Tagå±æ€§ï¼Œå·²é€—å·åˆ†éš”
+        /// </summary>
         public string TagNames { get; set; }
+        /// <summary>
+        /// TestCase æ¡ˆä¾‹å¯ç”¨æ ‡å¿—
+        /// </summary>
         public bool IsValid { get; set; }
+        /// <summary>
+        /// åˆ›å»ºæ—¶é—´
+        /// </summary>
         public DateTime CreateTime { get; set; }
+        /// <summary>
+        /// TCçš„åˆ¶å®šè€…
+        /// </summary>
         public string OwnerName { get; set; }
         public int VerifyRuleId { get; set; }
     }
@@ -34,35 +61,35 @@ namespace Executor
 
     public class TestCaseRawData
     {
-        #region Éè¼ÆÊ±ÌîÈë
+        #region è®¾è®¡æ—¶å¡«å…¥
 
         /// <summary>
-        /// ²âÊÔ°¸Àı±àºÅ
+        /// æµ‹è¯•æ¡ˆä¾‹ç¼–å·
         /// </summary>
         public Guid TestCaseId { get; set; }
         /// <summary>
-        /// ÔªÊı¾İ´¦ÀíÆ÷µÄÀàĞÍÃû³Æ
+        /// å…ƒæ•°æ®å¤„ç†å™¨çš„ç±»å‹åç§°
         /// </summary>
         public string RawDataHandlerType { get; set; }
         /// <summary>
-        /// ÓÃÓÚ¶à´¦Àí³ÌĞòÇóÓàË÷ÒıÂÖÑ¯
+        /// ç”¨äºå¤šå¤„ç†ç¨‹åºæ±‚ä½™ç´¢å¼•è½®è¯¢
         /// </summary>
         public int RawDataHandlerIndex { get; set; }
         /// <summary>
-        /// Ô­Ê¼Êı¾İÀ´Ô´
+        /// åŸå§‹æ•°æ®æ¥æº
         /// </summary>
         public string RawDataSource { get; set; }
 
         public string RawDataQueryExpress1 { get; set; }
         /// <summary>
-        /// ¿ÉÑ¡
+        /// å¯é€‰
         /// </summary>
         public string RawDataQueryExpress2 { get; set; }
         public int TimeoutSeconds { get; set; }
 
         #endregion
 
-        #region ÔËĞĞÊ±ÌîÈë
+        #region è¿è¡Œæ—¶å¡«å…¥
 
         public string HandlerMachineName { get; set; }
         public string ReturnObjFilePath { get; set; }

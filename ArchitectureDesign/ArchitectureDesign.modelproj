@@ -43,6 +43,20 @@
       <SubType>Content</SubType>
       <DependentUpon>UserCases\RawDataHandler.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="UserCases\TaskAssignmentProcess.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserCases\TaskAssignmentProcess.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UserCases\TaskAssignmentProcess.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UserCases\TaskVerifyProcess.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserCases\TaskVerifyProcess.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UserCases\TaskVerifyProcess.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="UserCases\TestSuiteManagement.usecasediagram">
       <SubType>Content</SubType>
     </Content>
